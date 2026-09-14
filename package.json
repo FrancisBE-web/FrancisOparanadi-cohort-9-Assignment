@@ -1,0 +1,24 @@
+{
+  "name": "tecn-ch9",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancisBE-web/FrancisOparanadi-cohort-9-Assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrancisBE-web/FrancisOparanadi-cohort-9-Assignment/issues"
+  },
+  "homepage": "https://github.com/FrancisBE-web/FrancisOparanadi-cohort-9-Assignment#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.10.0",
+    "nodemon": "^3.1.14"
+  }
+}
