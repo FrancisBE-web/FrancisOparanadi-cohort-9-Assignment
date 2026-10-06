@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+// defining database structure for users
+
 const userSchema = new Schema({
     firstName : {
         type: String,
@@ -38,6 +40,13 @@ const userSchema = new Schema({
         type : Boolean,
         default : false
     },
+    verificationToken: {
+         type: String
+    },
+    verificationTokenExpires: { 
+    type: Date
+    },
+
 
 }, {timestamps: true, versionkey : false});
 

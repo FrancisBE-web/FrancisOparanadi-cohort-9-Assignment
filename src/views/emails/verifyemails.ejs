@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+    .container { background-color: #ffffff; padding: 30px; border-radius: 8px; max-width: 500px; margin: 0 auto; }
+    .btn { display: inline-block; padding: 12px 24px; background-color: #007bff; color: #ffffff !important; text-decoration: none; border-radius: 5px; margin-top: 15px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to EventHorizon, <%= firstName %>!</h2>
+    <p>Thank you for registering. Please click the button below to verify your email address:</p>
+    <a href="<%= verificationUrl %>" class="btn">Verify My Email</a>
+    <p style="margin-top: 20px; font-size: 12px; color: #777;">This link will expire in 24 hours.</p>
+  </div>
+</body>
+</html>

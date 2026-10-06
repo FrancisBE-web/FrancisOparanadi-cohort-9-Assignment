@@ -1,5 +1,7 @@
 const Joi = require('joi');
 
+// validates users input to be stored in the database for registration
+
 const registerSchema = Joi.object({
     firstName : Joi.string().required(),
     lastName : Joi.string().required(),
@@ -11,11 +13,15 @@ const registerSchema = Joi.object({
 
 });
 
+// validates users input to be stored in the database for login
+
 const loginSchema = Joi.object({
     email : Joi.string().email().required(),
     password : Joi.string().required(),
 
 });
+
+// validation functions
 
 const validateRegister = (req,res, next) =>{
     const {error} = registerSchema.validate(req.body);
